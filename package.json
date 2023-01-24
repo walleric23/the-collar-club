@@ -1,0 +1,38 @@
+{
+  "name": "the-collar-club",
+  "version": "1.0.0",
+  "description": "This program is used for Dog Walkers to create listings for their services and dog owners to post pictures to show off their dogs and get info on dog walkers so they can hire someone to care for their pets.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.0.0",
+    "prettier": "^2.8.2",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HunterHarvell/the-collar-club.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HunterHarvell/the-collar-club/issues"
+  },
+  "homepage": "https://github.com/HunterHarvell/the-collar-club#readme"
+}

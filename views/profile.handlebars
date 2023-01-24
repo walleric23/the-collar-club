@@ -1,0 +1,42 @@
+
+
+<div class="row">
+  <div class="col-auto">
+     <div>
+        <img src={{profilePicture}} alt="" id="uploadedimage">
+    </div>
+    <h2>Welcome, {{name}}!</h2>
+    <p>Email: {{email}} </p>
+  </div>
+</div>
+<div>
+  <img src={{profilePicture}} alt="Defualt Picture" id="uploadedimage">
+</div>
+
+{{#if isProvider}}
+<div class="col-md-6 profile-page">
+  <h3>Thank you for being a Provider!</h3>
+  <h3>Your Provider Info:</h3>
+  <p>Phone: {{providerInfo.phone}}</p>
+  <p>City: {{providerInfo.city}}</p> 
+  <p>Dog walking availability: {{providerInfo.dogWalk}}</p>
+  <P>Dog feeding availability: {{providerInfo.dogFeed}}</P>
+  <p>Short-term dogsitting: {{providerInfo.sTDogSit}}</p>
+  <p>Long-term dogsitting: {{providerInfo.lTDogSit}}</p>
+  <p>Small dogs: {{providerInfo.small}}</p>
+  <p>Medium dogs: {{providerInfo.medium}}</p>
+  <p>Large dogs: {{providerInfo.large}}</p>
+</div>
+{{else}}
+
+<div class="col-md-6 profile-page">
+  <button class="btn btn-primary" id="becomeProvider" >Become a Provider</button>
+</div>
+
+{{/if}}
+
+<div class="col-md-6 profile-page">
+  <button class="btn btn-primary" id="updateProfile" providerCheck="{{isProvider}}" >Update Profile</button>
+</div>
+
+<script src="./js/profile.js"></script>

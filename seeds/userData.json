@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sal A Mander",
+    "email": "wdw@hotmail.com",
+    "password": "password",
+     "isProvider": true
+  },
+  {
+    "name": "Jenny Jumper",
+    "email": "JJumper@hotmail.com",
+    "password": "molly841",
+    "isProvider": false
+  },
+  {
+    "name": "Walker dog Walker",
+    "email": "walkking@msn.com",
+    "password": "toby3214",
+    "isProvider": true
+  },
+  {
+    "name": "Hello Kitty",
+    "email": "meowkitty@gmail.com",
+    "password": "kitty214",
+    "isProvider": true
+  }
+]

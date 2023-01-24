@@ -1,0 +1,40 @@
+<div class="container container-fluid overflow-auto" style="height: 75vh">
+{{!-- looping over the listings --}}
+{{#each listings as |listing| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>{{listing.user.name}}</h2>
+    <p>City: {{listing.city}}</p>
+    <p>Phone: {{listing.phone}}</p>
+
+    {{#if listing.dogWalk}}
+    <p>Dog Walks Available</p>
+    {{/if}}
+
+    {{#if lisitng.dogFeed}}
+    <p>Dog Feeding Available</p>
+    {{/if}}
+
+    {{#if listing.sTDogSit}}
+    <p>Short-Term Dog Sitting Available</p>
+    {{/if}}
+    
+    {{#if listing.lTDogSit}}
+    <p>Long-Term Dog Sitting Available</p>
+    {{/if}}
+
+    {{#if listing.small}}
+    <p>Works with small dogs (40 pounds and under).</p>
+    {{/if}}
+
+    {{#if listing.medium}}
+    <p>Works with medium dogs (40 pounds to 80 pound).</p>
+    {{/if}}
+
+    {{#if listing.large}}
+    <p>Works with large dogs (80 pounds and larger).</p>
+    {{/if}}
+  </div>
+</div>
+{{/each}}
+</div>

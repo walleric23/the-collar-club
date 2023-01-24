@@ -1,0 +1,76 @@
+
+
+{{!-- FIXME: should have user and provider info to update as this updates
+people that are both user-update updates people that are just users
+copy info from user-update --}}
+{{!-- TODO: need to fill in values from database like in user-update 
+but need provder info added to providerUpdate homeroute first --}}
+<div class="row">
+  <div class="col-auto">
+    <h2>Update the profile for {{name}}</h2>
+  </div>
+</div>
+<div class="form update-form">
+    <div class="form-group">
+        <label for="name-signup">Name:</label>
+        <input class="form-input" type="text" id="name-signup" value="{{name}}" />
+    </div>
+    <div class="form-group">
+        <label for="email-signup">Email:</label>
+        <input class="form-input" type="text" id="email-signup" value="{{email}}"/>
+    </div>
+    <div class="form-group">
+        <label for="phone-signup">Phone number:</label>
+        <input class="form-input" type="text" id="phone-signup" value="{{providerInfo.phone}}"/>
+        <p>Input Format: xxx-xxx-xxxx</p>
+    </div>
+    <div class ="form-group">
+        <label for="location-signup">What city are you located in?</label>
+        <input class="form-input" type="text" id="location-signup" value="{{providerInfo.city}}" />
+    </div>
+
+    <div class ="form-group">
+        <label for="dog-walking">Are you available for dog walking services? Walks are one hour minimum.</label>
+        <input class="form-input" type="checkbox" id="dogwalk-signup" />
+    </div>
+    <div class="form-group">
+        <label for="dog-feeding">Are you available to feed dogs for clients? Services typically take 15-30 minutes, but you will have to enter client's homes while they are away.</label>
+        <input class="form-input" type="checkbox" id="dogfeeding-signup"  />
+    </div>
+    <div class="form-group">
+        <label for="STdogSitting">Are you available for short-term (less than 8 hours) dog sitting?</label>
+        <input class="form-input" type="checkbox" id="STdogSitting-signup" />
+    </div>
+    <div>
+        <label for="LTdogSitting">Are you available for long-term (muliple day) dog sitting?</label>
+        <input class="form-input" type="checkbox" id="LTdogSitting-signup"  />
+    </div>
+    <div class="form-group">
+        <label for="smallDog">Do you service small dogs?(0-35lbs)</label>
+        <input class="form-input" type="checkbox" id="smallDog-signup"  />
+    </div>
+    <div class="form-group">
+        <label for="medDog">Do you service medium dogs?(35-70lbs)</label>
+        <input class="form-input" type="checkbox" id="medDog-signup" />
+    </div>
+    <div class="form-group">
+        <label for="largeDog">Do you service large dogs?(70+lbs)</label>
+        <input class="form-input" type="checkbox" id="largeDog-signup"  />
+    </div>
+    <div class="form-group">
+        <button id="upload_widget" class="cloudinary-button">Upload Photo</button>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" id="save-changes" type="submit" provider-id="{{providerInfo.id}}" >Save Changes</button>
+    </div>
+     <div class="form-group">
+        <button class="btn btn-primary" id="removeProvider" provider-id="{{providerInfo.id}}"  >Remove Provider Status</button>
+    </div>
+     <div>
+        <img src={{profilePicture}} alt="" id="uploadedimage">
+    </div>
+</div>
+<script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
+<script src="./js/cloudinary.js" type="text/javascript"></script>
+<script src="./js/providerUpdate.js"></script>

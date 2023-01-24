@@ -1,0 +1,32 @@
+[
+  {
+    "comment": "",
+    "stars": 2,
+    "user_id": 4,
+    "provider_info_id": 1
+  },
+  {
+    "comment": "Went the distance, literally! HaHa",
+    "stars": 5,
+    "user_id": 3,
+    "provider_info_id": 2
+  },
+  {
+    "comment": "Best is show for dog walking!",
+    "stars": 5,
+    "user_id": 2,
+    "provider_info_id": 3
+  },
+  {
+    "comment": "",
+    "stars": 3,
+    "user_id": 1,
+    "provider_info_id": 1
+  },
+  {
+    "comment": "This person did a poopy job of scooping the poop",
+    "stars": 1,
+    "user_id": 3,
+    "provider_info_id": 3
+  }
+]

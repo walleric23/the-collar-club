@@ -1,0 +1,38 @@
+[
+  {
+    "phone": "343-332-2234",
+    "city": "San Francisco",
+    "dogWalk": true,
+    "dogFeed": true,
+    "sTDogSit": false,
+    "lTDogSit": true,
+    "small": true,
+    "medium": true,
+    "large": false,
+    "user_id": 1
+  },
+  {
+    "phone": "425-334-2255",
+    "city": "Kirkland",
+    "dogWalk": false,
+    "dogFeed": true,
+    "sTDogSit": false,
+    "lTDogSit": true,
+    "small": true,
+    "medium": false,
+    "large": true,
+    "user_id": 4
+  },
+  {
+    "phone": "432-223-3245",
+    "city": "Woodinville",
+    "dogWalk": true,
+    "dogFeed": false,
+    "sTDogSit": false,
+    "lTDogSit": true,
+    "small": false,
+    "medium": true,
+    "large": true,
+    "user_id": 2
+  }
+]
