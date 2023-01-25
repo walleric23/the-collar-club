@@ -1,4 +1,6 @@
-<div class="container container-fluid overflow-auto" style="height: 75vh">
+{{!-- <div class="container container-fluid overflow-auto" style="height: 75vh"> --}}
+<body>
+<div >
 {{!-- looping over the listings --}}
 {{#each listings as |listing| }}
 <div class="row mb-4 project">
@@ -35,6 +37,15 @@
     <p>Works with large dogs (80 pounds and larger).</p>
     {{/if}}
   </div>
+  <div id="profile-form" class="col-md-6" >
+  <div >
+  <div id="pic">
+
+        <img src={{listing.user.profilePicture}} alt="" id="uploadedimage">
+  </div>
+</div>
+</div>
 </div>
 {{/each}}
 </div>
+</body>
