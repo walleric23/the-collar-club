@@ -1,22 +1,18 @@
-
-
+<body>
 <div class="row">
-  <div class="col-auto">
-     <div>
-        <img src={{profilePicture}} alt="" id="uploadedimage">
-    </div>
+<div class="col-md-6">
+<div>
+  <div>
     <h2>Welcome, {{name}}!</h2>
     <p>Email: {{email}} </p>
   </div>
 </div>
+
 <div>
-  <img src={{profilePicture}} alt="Defualt Picture" id="uploadedimage">
-</div>
 
 {{#if isProvider}}
-<div class="col-md-6 profile-page">
-  <h3>Thank you for being a Provider!</h3>
-  <h3>Your Provider Info:</h3>
+<div class="profile-page">
+  <h4>Thank you for being a Provider!</h4>
   <p>Phone: {{providerInfo.phone}}</p>
   <p>City: {{providerInfo.city}}</p> 
   <p>Dog walking availability: {{providerInfo.dogWalk}}</p>
@@ -38,5 +34,17 @@
 <div class="col-md-6 profile-page">
   <button class="btn btn-primary" id="updateProfile" providerCheck="{{isProvider}}" >Update Profile</button>
 </div>
+</div>
+</div>
 
+<div id="profile-form" class="col-md-6" >
+  <div >
+  <div>
+
+        <img src={{profilePicture}} alt="" id="uploadedimage">
+  </div>
+</div>
+</div>
+</div>
+</body>
 <script src="./js/profile.js"></script>
