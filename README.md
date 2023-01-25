@@ -8,22 +8,27 @@ This program is used for Dog Walkers to create listings for their services and d
 - Created a database to hold the provider and user information
 - Created HTML and CSS to display the User Interface
 - Created a controller with files to hold the routes to access the database
+- Used Cloudinary to upload photos to user profile
 - Created a read.me
 
 ## Screenshots
 
 ### Screenshot of login screen
-<img src="public/images/loginscreenshot.jpg" width="600" text-align="center">
-### Screenshot of provider input screen
-![Screenshot of provider input screen](.png)
+![Screenshot of login screen](login.png)
 
-### Screenshot of user search screen
-![Screenshot of user search screen](.png)
+### Screenshot of provider update screen
+![Screenshot of provider update screen](providerupdate.png)
+
+### Screenshot of top of listings screen scroll to see more
+![Screenshot of listings screen](topofproviderlistings.png)
 
 
-## Link to Project
+## Links to Project
+### Git Hub
+[https://github.com/walleric23/the-collar-club]
 
-[https://github.com/HunterHarvell/the-collar-club]
+### Heroku
+[https://calm-ocean-49248.herokuapp.com/]
 
 ## Credits
 
@@ -33,8 +38,8 @@ Programmers:
 -Hunter Harvell
 -Kim Van Wyk
 
-Icon by <a href="https://freeicons.io/profile/5790">ColourCreatype</a> on <a href="https://freeicons.io">freeicons.io</a>
-                                
+Cloudinary  
+UW Bootcamp
 ## License
 
 Please refer to the LICENSE in the repo.
